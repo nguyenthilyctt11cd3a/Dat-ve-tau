@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/anh25"
+        android:stretchColumns="*"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/txtten"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:hint="@string/txtten"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+        <EditText
+            android:id="@+id/txtsdt"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:ems="10"
+            android:hint="@string/txtsdt"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="86dp" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Thành viên"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="153dp" />
+
+
+        <TableRow android:paddingTop="20dp">
+
+            <RadioButton
+                android:id="@+id/rbtnvip"
+                android:layout_width="166dp"
+                android:layout_height="46dp"
+                android:text="@string/vip"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="182dp" />
+
+            <RadioButton
+                android:id="@+id/rbtnthuong"
+                android:layout_width="238dp"
+                android:layout_height="51dp"
+                android:text="@string/thuong"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="217dp"
+                tools:layout_editor_absoluteY="182dp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Loại vé"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="244dp" />
+
+        <TableRow android:paddingTop="20dp">
+
+            <RadioButton
+                android:id="@+id/rbtngiuong"
+                android:layout_width="172dp"
+                android:layout_height="43dp"
+                android:text="@string/giuong"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="80dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <RadioButton
+                android:id="@+id/rbtnghe"
+                android:layout_width="239dp"
+                android:layout_height="50dp"
+                android:text="@string/ghe"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="217dp"
+                tools:layout_editor_absoluteY="290dp" />
+        </TableRow>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/dichvu"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="349dp" />
+
+        <TableRow android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="131dp"
+                android:layout_height="64dp"
+                android:text="Thanh toán"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="418dp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="218dp"
+                android:layout_height="68dp"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="409dp" />
+        </TableRow>
+
+        <TableRow android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="@string/cancle"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="499dp" />
+
+            <Button
+                android:id="@+id/btnbook"
+                android:layout_width="239dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:text="@string/book"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="192dp"
+                tools:layout_editor_absoluteY="498dp" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
